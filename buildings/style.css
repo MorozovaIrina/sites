@@ -1,0 +1,785 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap");
+
+/*header*/
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#burger-menu {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  margin: 50px;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  background: #f7654a;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+  background: #fff;
+  display: block;
+  height: 3px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+  content: "";
+}
+
+#burger-menu span {
+  right: 15px;
+  top: 23px;
+  width: 19px;
+}
+
+#burger-menu span:before {
+  left: 0px;
+  top: -10px;
+  width: 19px;
+}
+
+#burger-menu span:after {
+  left: 0px;
+  top: 10px;
+  width: 19px;
+}
+
+#burger-menu.close span {
+  transform: rotate(-45deg);
+  top: 22px;
+  width: 27px;
+  left: 12px;
+}
+
+#burger-menu.close span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+}
+
+#burger-menu.close span:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+}
+
+#menu {
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#menu li {
+  list-style: none;
+}
+
+#menu a {
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  margin-bottom: 7px;
+  text-decoration: none;
+  font-family: "Oswald";
+  font-weight: 500;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-page {
+  background-image: url(/buildings/image/MainImage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 488px;
+  background-position: center;
+}
+
+.main-HeaderText h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.main-HeaderText p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.main-HeaderText {
+  margin-left: auto;
+  margin-right: auto;
+  width: 658px;
+}
+
+/*MAIN*/
+.wrapper-color {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom #404149 white);
+  background: linear-gradient(to bottom, #52494d 50%, white 50%);
+}
+.history p:first-child {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7654a;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.history p:nth-child(2) {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.history p:last-child {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #999999;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.our-history {
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 1100px;
+}
+.projects h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #404149;
+  padding-bottom: 60px;
+  margin: 0;
+}
+.project {
+  display: flex;
+}
+.projects {
+  padding-top: 150px;
+}
+.content-line {
+  content: "";
+  width: 55px;
+  height: 6px;
+  background: #f7654a;
+}
+.our-project h5 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+  margin: 0;
+  padding-top: 15px;
+}
+.our-project p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+}
+.our-project img {
+  padding-bottom: 45px;
+}
+.connection-page {
+  background: #f7654a;
+}
+.connection {
+  display: flex;
+  justify-content: space-between;
+}
+.connection-text p:first-child {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 30px;
+}
+.connection-text p:last-child {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 45px;
+}
+.request {
+  background: #ffffff;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  border: none;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+}
+.request-button {
+  display: flex;
+  align-items: center;
+}
+.request img {
+  padding-right: 10px;
+}
+.connection-page {
+  margin-top: 50px;
+}
+.our-services h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #f7f7f7;
+  width: 350px;
+  height: 250px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.service p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.portfolio-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+.portfolio-page img {
+  width: 100%;
+}
+.image-portfolio {
+  flex-basis: 25%;
+  display: flex;
+}
+.question-block h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 100px;
+}
+.questions summary {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #f7654a;
+  padding-bottom: 20px;
+}
+.questions p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.questions {
+  padding-top: 50px;
+  padding-left: 115px;
+}
+.partners-page h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.partners-page {
+  background: #404149;
+}
+.partners-page {
+  margin-top: 100px;
+}
+.partners-block {
+  display: flex;
+  justify-content: center;
+}
+.partner {
+  padding: 0 13px 30px;
+}
+.reviews-page h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.review content {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  color: #f7654a;
+  position: absolute;
+  left: 30px;
+  bottom: 130px;
+}
+
+.reviews {
+  display: flex;
+}
+.review-text p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #999999;
+  padding: 78px 30px 40px 30px;
+  margin: 0;
+}
+.review-text {
+  background: #f7f7f7;
+  position: relative;
+}
+.FromFeedback p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding-bottom: 80px;
+}
+.FromFeedback span {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #f7654a;
+}
+.review {
+  padding-right: 20px;
+}
+/*FOOTER*/
+.contacts {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.footer-contacts {
+  display: flex;
+  justify-content: space-around;
+}
+.contact p:nth-child(2) {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #999999;
+  margin: 0;
+  padding-top: 20px;
+}
+.contact p:last-child {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  padding-top: 20px;
+}
+.contact a {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #f7654a;
+  padding-top: 25px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-image {
+  height: 49px;
+}
+
+@media all and (max-width: 1100px) {
+  /*Header*/
+
+  .header-page {
+    max-width: 100%;
+    background-size: cover;
+  }
+  /*MAIN*/
+  .our-history {
+    width: 90%;
+  }
+  .history p:first-child {
+    font-size: 53px;
+    line-height: 70px;
+  }
+  .history p:nth-child(2) {
+    font-size: 33px;
+    line-height: 46px;
+    padding-bottom: 3px;
+  }
+  .projects {
+    padding-top: 120px;
+  }
+  .project {
+    flex-wrap: wrap;
+  }
+  .connection {
+    justify-content: space-around;
+  }
+  .our-services h2 {
+    padding-top: 60px;
+  }
+  .question-block h2 {
+    padding-top: 60px;
+  }
+  .partner {
+    padding: 0px 4px 30px;
+  }
+  .reviews-page h2 {
+    padding-top: 60px;
+  }
+  .review content {
+    bottom: 155px;
+  }
+}
+@media all and (max-width: 900px) {
+  /*Header*/
+  .main-HeaderText h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .main-HeaderText p {
+    padding-top: 15px;
+  }
+  .header-page {
+    height: 416px;
+  }
+  .main-HeaderText {
+    width: auto;
+  }
+  /*MAIN*/
+  .our-history {
+  }
+  .history p:first-child {
+    font-size: 46px;
+    line-height: 64px;
+  }
+  .history p:nth-child(2) {
+    font-size: 31px;
+    line-height: 44px;
+    padding-bottom: 2px;
+  }
+  .history p:last-child {
+    font-size: 16px;
+    line-height: 23px;
+    padding-bottom: 10px;
+  }
+  .projects {
+    padding-top: 3px;
+  }
+  .projects h2 {
+    padding-top: 60px;
+  }
+  .connection-text p:first-child {
+    font-size: 39px;
+    line-height: 56px;
+    letter-spacing: 0em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  .connection-text p:last-child {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 25px;
+    letter-spacing: 0em;
+  }
+  .request {
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0em;
+    padding: 10px 15px;
+  }
+  .our-services h2 {
+    padding-top: 25px;
+  }
+
+  .question-block h2 {
+    padding-top: 30px;
+  }
+  .partners-page h2 {
+    font-size: 34px;
+    line-height: 49px;
+    padding-top: 35px;
+  }
+  .partners-block {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .reviews-page h2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .review content {
+    bottom: auto;
+    font-weight: 300;
+  }
+  .review-text p {
+    font-size: 11px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  /*Header*/
+
+  #menu.overlay {
+    padding-right: 37px;
+    padding-top: 0px;
+  }
+  .main-HeaderText h1 {
+    font-size: 32px;
+    line-height: 49px;
+  }
+  #menu a {
+    font-size: 25px;
+    margin-bottom: 4px;
+  }
+  .header-page {
+    height: 356px;
+  }
+
+  /*MAIN*/
+  .questions {
+    padding-left: 0;
+  }
+  .connection-page {
+    margin: 10px;
+  }
+  .connection-text p:first-child {
+    font-size: 33px;
+    line-height: 50px;
+  }
+  .connection-text p:last-child {
+    font-size: 16px;
+  }
+  .request {
+    padding: 7px 13px;
+    margin-right: 3px;
+  }
+  .FromFeedback p {
+    padding-bottom: 50px;
+    letter-spacing: 0em;
+    font-size: 19px;
+  }
+  .FromFeedback span {
+    font-size: 18px;
+    letter-spacing: 0em;
+  }
+  .reviews-page h2 {
+    font-size: 30px;
+  }
+  .question-block h2 {
+    font-size: 32px;
+  }
+  .our-services h2 {
+    font-size: 32px;
+  }
+  .service p {
+    font-size: 21px;
+  }
+  .our-project p {
+    font-size: 15px;
+  }
+  .projects h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  /*FOOTER*/
+  .contacts {
+    margin: 0;
+  }
+  .contact p:nth-child(2) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .contact p:last-child {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .contact a {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  /*HEADER*/
+  .main-HeaderText h1 {
+    font-size: 26px;
+    line-height: 45px;
+  }
+  #menu.overlay {
+    padding-right: 82px;
+  }
+  /*MAIN*/
+  .contact p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .main-HeaderText p {
+    font-size: 10px;
+  }
+  .our-project img {
+    max-width: 100%;
+  }
+  .connection-text p:first-child {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .connection-text p:last-child {
+    font-size: 15px;
+    line-height: 23px;
+    padding-bottom: 18px;
+  }
+  .reviews {
+    flex-wrap: wrap;
+  }
+}
