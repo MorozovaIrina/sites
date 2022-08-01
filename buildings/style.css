@@ -114,7 +114,7 @@
 }
 
 .header-page {
-  background-image: url(/buildings/image/MainImage.png);
+  background-image: url(./image/MainImage.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 488px;
