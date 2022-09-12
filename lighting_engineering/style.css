@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Oswald&display=swap");
+body {
+  margin: 0;
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/*HEADER*/
+.header-page {
+  background-image: url(/lighting_engineering/image/header-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.header-menu {
+  display: flex;
+
+  background: rgba(0, 91, 193, 0.6);
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 80px;
+}
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu li > a {
+  color: white;
+  text-decoration: none;
+  padding-right: 28px;
+}
+.main-info {
+  height: 585px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 90, 193, 0) 25%,
+    rgba(0, 91, 193, 0.6) 25% 50%,
+    rgba(0, 90, 193, 0) 50%
+  );
+  display: flex;
+}
+.main-text h1 {
+  margin: 0;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  padding-left: 323px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  padding-top: 100px;
+}
+.main-text p {
+  margin: 0;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  padding-left: 323px;
+  padding-right: 306px;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+}
+.main-button {
+  border: 2px solid #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+.main-text div {
+  padding-left: 323px;
+  padding-top: 50px;
+}
+/*MAIN*/
+.line-top {
+  content: "";
+  width: 100px;
+  border: 3px solid #005bc1;
+  margin-bottom: 13px;
+}
+.line-bottom {
+  content: "";
+  width: 50px;
+  border: 3px solid #005bc1;
+}
+.slider-menu-text p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #343434;
+  padding-left: 40px;
+}
+.slider-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+.slider-image {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-menu-text {
+  display: flex;
+  align-items: center;
+}
+.slider-menu-button {
+  display: flex;
+  align-items: center;
+}
+.button-left {
+  border: none;
+  background: white;
+  padding: 0;
+  padding-right: 0.5px;
+  cursor: pointer;
+}
+.button-right {
+  border: none;
+  background: white;
+  padding: 0;
+  padding-right: 0.5px;
+  cursor: pointer;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#catalog-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+#catalog-menu p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #343434;
+  cursor: pointer;
+}
+#catalog-menu p:first-child {
+  margin-right: 15px;
+}
+#catalog-menu .active {
+  border-bottom: 2px solid #005bc1;
+}
+.catalog-item {
+  display: flex;
+  justify-content: space-around;
+}
+.catalog {
+  padding-top: 50px;
+}
+.hidden {
+  display: none;
+}
+.rent {
+  padding-top: 50px;
+}
+.rent-info {
+  display: flex;
+}
+.textAboutRent p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #343434;
+  margin: 0;
+  padding-right: 88px;
+}
+.equipmentForRent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #005bc1;
+  margin-top: 40px;
+  flex: 3;
+  max-width: 60%;
+}
+.forRent {
+  display: flex;
+  padding-top: 40px;
+}
+.equipment-slider {
+  width: 100%;
+}
+.equipment {
+  display: flex;
+}
+.forRent h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  padding-right: 80px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #343434;
+}
+.equipment-text p {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #343434;
+  padding-left: 25px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+.equipment-text li {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+.textAboutRent {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+.equipment-img {
+  width: 255px;
+  display: flex;
+  align-items: flex-end;
+}
+.equipment-img img {
+  width: 100%;
+}
+.news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.news-section {
+  margin-top: 100px;
+}
+.news-button {
+  border: 2px solid #005bc1;
+  background: #005bc1;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 7px 15px;
+}
+.last-news {
+  display: flex;
+}
+.TextMainNew h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #343434;
+  margin: 0;
+}
+.TextMainNew p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.readMore {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #343434;
+}
+.TextNew h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #343434;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.TextNew p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.ImageNew p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #979797;
+  margin: 0;
+}
+.ImageNew {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.last-news {
+  display: flex;
+}
+.LastMainNew {
+  display: flex;
+  flex: 2;
+  margin-right: 50px;
+}
+.LastNew {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 50px;
+}
+.MainInfoText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.MainInfoText p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: right;
+  color: #979797;
+  margin: 0;
+  padding: 0;
+}
+.LastMainNew img {
+  width: 255px;
+  height: 242px;
+}
+.ImageNew img {
+  width: 128px;
+  height: 115px;
+}
+.TextMainNew {
+  padding-left: 24px;
+}
+.LastNew:last-child {
+  margin: 0;
+}
+.LinkNews {
+  padding-top: 22px;
+}
+.news-section {
+  padding-bottom: 100px;
+}
+/*FOOTER*/
+.Footer {
+  background: #005bc1;
+}
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerLine {
+  content: "";
+  border: 1px solid #ffffff;
+}
+.FooterContent {
+  display: flex;
+  justify-content: space-between;
+}
+.tel {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.address {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+.mail {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: right;
+
+  color: #ffffff;
+}
+.FooterContent p:first-child {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+.FooterContent p:last-child {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+
+  text-align: right;
+
+  color: #ffffff;
+}
+.MenuFooter li {
+  list-style-type: none;
+  padding-bottom: 10px;
+ 
+  
+}
+.MenuFooter a{
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.MenuFooter ul{
+  display: flex;
+  
+  padding-left: 0;
+}
+.MenuFooter div:first-child{
+  padding-right: 110px;
+}
+.MenuFooter div:last-child{
+  padding-left: 130px;
+}
+@media all and (max-width: 1100px){
+  /*FOOTER*/
+  .menu li{
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 900px){
+  /*HEADER*/
+  .header-menu {
+    flex-direction: column;
+  }
+  .main-text h1{
+    font-size: 35px;
+    line-height: 50px;
+    
+    padding-bottom: 30px;
+  }
+  .main-info{
+    justify-content: center;
+    height: 537px;
+  }
+
+ /*MAIN*/
+ .news {
+  justify-content: space-around;
+ }
+ .last-news {
+  flex-direction: column;
+ }
+ .ImageNew {
+  justify-content: flex-start;
+ }
+ .LastNew{
+  padding-top: 20px;
+ }
+ .TextNew h4{
+  padding-bottom: 5px;
+ }
+ .TextNew p{
+  padding-bottom: 10px;
+ }
+ .news-section {
+  padding-bottom: 30px;
+ }
+ .slider-menu-text {
+  justify-content: space-around;
+ }
+ .rent-info {
+  flex-direction: column;
+ }
+ .forRent h4{
+  padding-right: 0;
+ }
+ .catalog-item {
+  flex-direction: column;
+ }
+ .slider-menu {
+  justify-content: space-around;
+ }
+ .slider-image img{
+  width: 100%;
+ }
+
+
+  /*FOOTER*/
+  .MenuFooter ul {
+    justify-content: space-around;
+
+  }
+
+  .FooterContent {
+    justify-content: space-around;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+  }
+
+} 
+@media all and (max-width: 600px){
+  /*HEADER*/
+  .menu li {
+    font-size: 10px;
+  }
+  .menu li > a {
+    
+    padding-right: 26px;
+  }
+  .menu ul{
+    padding-left: 10px;
+  }
+  /*MAIN*/
+  .slider-menu-text p {
+    
+    font-size: 27px;
+    line-height: 40px;
+    padding-left: 30px;
+  }
+  .slider-menu {
+    
+    padding-top: 50px;
+  }
+  .forRent {
+    
+    flex-direction: column;
+  }
+  .equipment {
+    
+    flex-wrap: wrap;
+  }
+  .forRent h4{
+    text-align: center;
+  }
+  .slider-menu-button{
+    justify-content: center;
+  }
+  .news{
+    flex-direction: column;
+  }
+  .LastMainNew{
+    flex-direction: column;
+  }
+  .LinkNews {
+    padding-top: 5px;
+  }
+  .MainInfoText{
+    padding-top: 10px;
+  }
+  .TextNew h4{
+    text-align: center;
+   padding-top: 10px;
+  }
+  /*FOOTER*/
+  .MenuFooter div:first-child{
+    padding-right: 0;
+  }
+  .MenuFooter div:last-child{
+    padding-left: 0;
+  }
+  .FooterContent p:first-child {
+    
+    font-size: 10px;
+  }
+  .FooterContent p:last-child{
+    
+    font-size: 10px;
+  }
+  .address {
+    
+    font-size: 13px;
+  }
+
+
+
+}
+
+
+@media all and (max-width: 400px){
+  /*HEADER*/
+  .menu ul{
+    flex-direction: column;
+  }
+  .main-text h1 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 35px;
+  }
+  .main-info {
+    
+    height: 461px;
+  }
+  /*MAIN*/
+  .slider-menu-text p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 10px;
+
+  }
+  .filter img{
+    width: 100%;
+  }
+  /*FOOTER*/
+  .MenuFooter ul {
+    text-align: center;
+    flex-direction: column;
+  }
+  .FooterContent p:last-child {
+    font-size: 8px;
+    line-height: 15px;
+  }
+  .FooterContent p:first-child {
+    font-size: 8px;
+    line-height: 15px;
+  }
+  
+}
+    
+
+
+
+
